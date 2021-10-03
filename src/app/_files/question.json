@@ -1,0 +1,35 @@
+[
+  {
+    "number": 1,
+    "question": "Eighteen thousandths, written as a decimal, is:",
+    "answers": [
+      "0.0018",
+      "0.018",
+      "0.18",
+      "0.00018"
+    ],
+    "correct_answer": "0.18"
+  },
+  {
+    "number": 2,
+    "question": "A train running at the speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?",
+    "answers": [
+      "120 metres",
+      "180 metres",
+      "324 metres",
+      "150 metres"
+    ],
+      "correct_answer": "150 metres"
+  },
+  {
+    "number": 3,
+    "question": "Which is a reserved word in the Java programming language?",
+    "answers": [
+      "method",
+      "native",
+      "subclasses",
+      "reference"
+    ],
+    "correct_answer": "native"
+  }
+]

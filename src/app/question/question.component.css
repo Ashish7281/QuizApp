@@ -1,0 +1,106 @@
+.quix-box .question-number,
+.quix-box .question-text,
+.quix-box .option-container,
+.custom-box {
+  max-width: 100%;
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.quix-box .question-number,
+.quix-box .question-text,
+.quix-box .option-container,
+.quix-box .answers-indicator .quix-box .question-number {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+}
+
+.quix-box .question-number {
+  font-size: 18px;
+  color: #dc3545;
+  font-weight: 600;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
+.quix-box .option-container .option {
+  background-color: #ccc;
+  padding: 13px 15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  opacity: 1;
+  animation-name: fadeIn 0.3s ease forwards;
+  position: relative;
+  overflow: hidden;
+}
+.btn {
+  padding: 15px 45px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+.quix-box .answers-indicator {
+  border-top: 1px solid #ccc;
+}
+.quix-box .answers-indicator div {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-top: 15px;
+}
+
+.quix-box .option-container .option:hover {
+  background-color: rgb(189, 110, 110);
+}
+
+#radio:checked {
+  background-color: rgb(141, 18, 18);
+}
+/* 
+#submit {
+  display: none;
+  position: absolute;
+} */
+
+.option-container input{
+  width: 20px;
+  height: 20px;
+  margin-left: 30px;
+  
+}
+.option-container label{
+  font-size: 20px;
+  margin-left: 10px;
+  width: 200px;
+}
+.option-container div:hover{
+  background-color: #c4858c;
+}
+

@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="quix-box custom-box">
+      <div class="question-number">
+        Question Number: 1/20<span style="float: right"></span>
+      </div>
+      <div class="question-text" style="text-align: justify">
+        {{ queNo }}) {{ question }}
+      </div>
+
+      <div class="option-container">
+        <div [ngClass]="indicate">
+        <input type="radio"  [(ngModel)]="radioSelected" value="{{ answer1 }}"
+        (change)="onItemChange($event)"  />
+        <label > {{ answer1 }}</label>
+      </div>
+      <div [ngClass]="indicate">
+        <input type="radio" [(ngModel)]="radioSelected" value="{{ answer2 }}"
+        (change)="onItemChange($event)"  />
+        <label > {{ answer2 }}</label>
+      </div>
+      <div [ngClass]="indicate">
+        <input type="radio"  [(ngModel)]="radioSelected" value="{{ answer3}}"
+        (change)="onItemChange($event)"  />
+        <label > {{ answer3 }}</label>
+      </div>
+      <div [ngClass]="indicate">
+        <input type="radio"  [(ngModel)]="radioSelected" value="{{ answer4 }}"
+        (change)="onItemChange($event)"  />
+        <label > {{ answer4 }}</label>
+      </div>
+      </div>
+
+      <div align="center">
+       <button type="button" class="btn" id="submit" routerLink="/result" >
+          Submit
+        </button>
+      </div>
+      <div class="answers-indicator">
+        <!-- <div [style.backgroundColor]="div1"></div> -->
+        <!-- <div [style.backgroundColor]="div2"></div>
+        <div [style.backgroundColor]="div3"></div>
+        <div [style.backgroundColor]="div4"></div>
+        <div [style.backgroundColor]="div5"></div> -->
+      </div>
+    </div>
+  </div>
+</div>
